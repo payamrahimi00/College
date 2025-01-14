@@ -1,0 +1,25 @@
+*{
+    cursor:url(./Img/Cursor/Cursor.png),auto;
+}
+
+/* مخفی کردن نشانگر پیش‌فرض */
+body {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  /* استایل نشانگر سفارشی */
+  .custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 255, 0.5);
+    border: 2px solid blue;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none; /* جلوگیری از تاثیرگذاری روی عناصر دیگر */
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+  }
+  
